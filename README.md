@@ -14,6 +14,8 @@ Proyek menggunakan HTML, CSS, dan JavaScript tanpa framework, proses build, atau
 - **Pertanyaan area layanan** — mengarahkan pertanyaan lokasi ke tim melalui WhatsApp.
 - **Promo berdasarkan tanggal** — menyembunyikan penawaran setelah periode promo berakhir.
 - **Navigasi responsif** — menu mobile, FAQ interaktif, dan footer dengan identitas merek.
+- **Rekanan** — bagian Cyberplus sebelum Layanan dan penyebutan pada footer.
+- **Licensing & Certification** — baris logo ringkas: MikroTik, K3, Cisco CCNA, Juniper, ISO 27001:2022, dan ISO 9001:2015. Pada layar kecil, baris dapat digeser secara horizontal.
 - **Aksesibilitas** — struktur HTML semantik, navigasi keyboard, label formulir, indikator fokus, dan dukungan preferensi pengurangan animasi.
 
 ## Teknologi
@@ -33,18 +35,18 @@ Proyek menggunakan HTML, CSS, dan JavaScript tanpa framework, proses build, atau
 .
 ├── README.md
 ├── preview.cjs
-└── dist/
-    ├── index.html
-    ├── styles.css
-    ├── hologram.css
-    ├── config.js
-    ├── app.js
-    ├── speed-test.js
-    └── assets/
-        ├── logo-dark.png
-        ├── brand-icon.png
-        ├── brosur.png
-        └── ...
+├── index.html
+├── styles.css
+├── hologram.css
+├── config.js
+├── app.js
+├── speed-test.js
+└── assets/
+    ├── logo-dark.png
+    ├── brand-icon.png
+    ├── brosur.png
+    ├── cyberplus.png
+    └── ...
 ```
 
 | File | Fungsi |
@@ -59,7 +61,7 @@ Proyek menggunakan HTML, CSS, dan JavaScript tanpa framework, proses build, atau
 
 ## Menjalankan secara lokal
 
-Untuk melihat halaman dasar, buka `dist/index.html` melalui browser. Untuk menguji interaksi dan Speed Test, gunakan server HTTP lokal.
+Untuk melihat halaman dasar, buka `index.html` melalui browser. Untuk menguji interaksi dan Speed Test, gunakan server HTTP lokal.
 
 Dengan Node.js terpasang, jalankan perintah berikut dari direktori proyek:
 
@@ -69,23 +71,23 @@ node preview.cjs
 
 Kemudian buka [http://127.0.0.1:4173](http://127.0.0.1:4173). Tekan `Ctrl+C` pada terminal untuk menghentikan server.
 
-Tidak perlu menjalankan `npm install`. Server preview digunakan untuk pengembangan lokal; hosting produksi cukup menyajikan file di dalam `dist`.
+Tidak perlu menjalankan `npm install`. Server preview digunakan untuk pengembangan lokal; hosting produksi cukup menyajikan file website di root repository.
 
 ## Konfigurasi
 
 ### Nomor WhatsApp
 
-Ubah `whatsappNumber` pada `dist/config.js`. Gunakan format internasional tanpa tanda tambah, spasi, atau tanda hubung:
+Ubah `whatsappNumber` pada `config.js`. Gunakan format internasional tanpa tanda tambah, spasi, atau tanda hubung:
 
 ```javascript
 whatsappNumber: '6285881322321'
 ```
 
-Sesuaikan juga teks nomor kontak pada footer dan FAQ di `dist/index.html` apabila nomor berubah.
+Sesuaikan juga teks nomor kontak pada footer dan FAQ di `index.html` apabila nomor berubah.
 
 ### Paket internet
 
-Kelola nama, kecepatan, harga, rekomendasi perangkat, dan fitur melalui array `packages` pada `dist/config.js`.
+Kelola nama, kecepatan, harga, rekomendasi perangkat, dan fitur melalui array `packages` pada `config.js`.
 
 | Kecepatan | Harga per bulan |
 | --- | ---: |
@@ -135,7 +137,7 @@ Referensi endpoint: [Cloudflare Speedtest](https://github.com/cloudflare/speedte
 
 1. Cadangkan isi website yang sudah ada.
 2. Tentukan document root untuk domain tujuan, misalnya `public_html`.
-3. Unggah **isi folder `dist`**, sehingga `index.html` berada langsung di document root.
+3. Unggah **file website beserta folder `assets`**, sehingga `index.html` berada langsung di document root.
 4. Pertahankan struktur folder `assets` dan nama file CSS serta JavaScript.
 5. Aktifkan HTTPS dan pastikan DNS domain mengarah ke hosting.
 6. Periksa navigasi, logo, tautan WhatsApp, informasi paket, dan Speed Test pada domain tujuan.
@@ -153,3 +155,6 @@ Setelah melakukan perubahan, periksa kembali tampilan HP dan desktop, tanggal pr
 **Sahabat Wifi Nusantara**  
 Area layanan: Jabodetabek dan sekitarnya  
 WhatsApp: [0858-8132-2321](https://wa.me/6285881322321)
+
+
+

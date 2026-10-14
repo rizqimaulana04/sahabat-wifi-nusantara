@@ -371,6 +371,43 @@ nav a { font-size: 14px; }
 }
 
 /* Expanded speed dashboard inspired by the supplied reference. */
+.partner-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  margin-top: 45px;
+  padding: 32px 42px;
+  border: 1px solid #80caff2b;
+  border-radius: 20px;
+  background: linear-gradient(115deg,#15294080,#111c3370);
+  box-shadow: inset 0 0 30px #69caff05;
+}
+.partner-copy .eyebrow { margin-bottom: 12px; }
+.partner-copy h2 { font-size: 28px; margin-bottom: 10px; }
+.partner-copy>p:last-child { color: #a6bbd5; font-size: 15px; margin-bottom: 0; }
+.partner-brand { flex-shrink: 0; padding: 12px 18px; background: white; border-radius: 12px; }
+.partner-brand img { display: block; width: 205px; height: auto; }
+.certification-section { padding-top: 35px; text-align: center; }
+.certification-section>.eyebrow { margin-bottom: 20px; }
+.certification-strip { display: flex; flex-wrap: nowrap; gap: 14px; overflow-x: auto; overflow-y: hidden; padding: 4px 2px 12px; scrollbar-width: thin; scrollbar-color: #507ca5 transparent; }
+.certification-badge { flex: 1 0 115px; height: 94px; min-width: 115px; border-radius: 9px; background: #f3f6fa; padding: 9px 14px; display: flex; align-items: center; justify-content: center; overflow: hidden; }
+.certification-badge-wide { flex-basis: 190px; min-width: 190px; }
+.certification-badge img { display: block; width: auto; height: auto; max-width: 100%; max-height: 100%; object-fit: contain; flex-shrink: 1; }
+@media(max-width:640px) {
+  .certification-section { padding-top: 28px; }
+  .certification-strip { gap: 10px; }
+  .certification-badge { flex: 0 0 105px; min-width: 105px; height: 80px; padding: 7px 10px; }
+  .certification-badge-wide { flex-basis: 160px; min-width: 160px; }
+}
+.footer-partner { color: #89a9cd; font-size: 13px; margin-top: 15px; margin-bottom: 0; }
+@media(max-width:640px) {
+  .partner-section { flex-direction: column; text-align: center; padding: 28px 22px; gap: 23px; margin-top: 30px; }
+  .partner-copy h2 { font-size: 26px; }
+  .partner-copy>p:last-child { font-size: 14px; }
+  .partner-brand img { width: 185px; }
+}
+
 .site-footer { text-align: center; }
 .footer-top { justify-items: center; }
 .footer-bottom { flex-direction: column; align-items: center; gap: 8px; }
@@ -466,3 +503,5 @@ nav a { font-size: 14px; }
   .server-route { display: none; }
   .speed-status { min-height: 48px; }
 }
+
+
