@@ -1,0 +1,92 @@
+/* Compact mobile experience. Desktop retains the main visual layout. */
+@media (max-width: 640px) {
+  .container { width: calc(100% - 32px); }
+  .announcement { min-height: 28px; padding: 6px 12px; font-size: 9px; }
+  .announcement>a { display: none; }
+  .nav-wrap { height: 68px; gap: 10px; }
+  .logo-window { width: 118px; height: 54px; }
+  .logo-window img { width: 116px; height: 116px; top: -29px; }
+  .nav-cta { font-size: 11px; min-height: 36px; padding: 9px 12px; gap: 8px; }
+  .menu-toggle { width: 36px; height: 36px; }
+  .hero { gap: 24px; padding-block: 25px 30px; }
+  .hero-copy { padding: 0; }
+  .hero .eyebrow { font-size: 9px; margin-bottom: 15px; }
+  h1 { font-size: clamp(34px,9.4vw,46px); line-height: 1.13; margin-bottom: 24px; }
+  .hero-description { font-size: 14px; line-height: 1.8; margin-bottom: 22px; }
+  .hero-actions { display: grid; grid-template-columns: 1fr; gap: 17px; }
+  .hero-actions .button { width: 100%; justify-content: space-between; min-height: 47px; font-size: 14px; }
+  .hero-actions .text-link { justify-content: center; font-size: 13px; }
+  .hero-note { margin-top: 20px; gap: 10px; }
+  .hero-note p { font-size: 11px; }
+  .hero-art { min-height: 285px; max-width: 420px; border-radius: 19px; }
+  .router-scene { width: 285px; max-width: none; top: -3px; }
+  .art-heading { left: 18px; top: 16px; font-size: 7px; }
+  .art-heading strong { font-size: 11px; }
+  .holo-spec { top: 60px; right: 17px; }
+  .holo-spec strong { font-size: 27px; }
+  .holo-spec em,.spark-two,.label-home,.label-work { display: none; }
+  .spark-one { font-size: 22px; }
+  .orbit-one { width: 210px; height: 125px; }
+  .orbit-two { width: 300px; height: 180px; }
+  .orbit-three { width: 390px; height: 240px; }
+  .connection-pill { bottom: 14px; padding: 8px 12px; }
+  .daily-strip .container { padding-block: 17px; gap: 14px 12px; }
+  .daily-strip .container>span { display: none; }
+  .daily-strip p { font-size: 11px; }
+  .daily-strip b { font-size: 19px; }
+  .section { padding-block: 42px; }
+  h2,.center-heading h2 { font-size: 29px; }
+  .eyebrow { font-size: 10px; letter-spacing: 1.2px; margin-bottom: 15px; }
+  .section-heading>p,.center-heading>p:not(.eyebrow),.benefit-card p,
+  .steps-intro>p:not(.eyebrow),.steps p,.coverage p:not(.eyebrow) { font-size: 14px; }
+  .benefit-grid { gap: 13px; }
+  .benefit-card { padding: 23px; min-height: 0; }
+  .line-icon { width: 38px; height: 38px; font-size: 24px; margin-bottom: 20px; }
+  .benefit-card h3 { font-size: 22px; }
+  .benefit-card p { margin-bottom: 18px; }
+  .partner-section { margin-top: 24px; padding: 22px; gap: 17px; }
+  .partner-copy h2 { font-size: 24px; }
+  .partner-copy>p:last-child { font-size: 13px; }
+  .partner-brand { padding: 9px 13px; }
+  .partner-brand img { max-width: 155px; }
+  .certification-section { padding-top: 24px; }
+  .certification-badge { height: 70px; flex-basis: 92px; min-width: 92px; }
+  .certification-badge-wide { flex-basis: 140px; min-width: 140px; }
+  .promo-strip { margin-bottom: 35px; padding: 21px; gap: 13px; }
+  .promo-strip strong { font-size: 15px; }
+  .needs-grid { gap: 23px; }
+  .need-card { padding: 23px; }
+  .need-top { margin-bottom: 14px; gap: 7px; }
+  .plan-tier { font-size: 17px; }
+  .need-card h3.plan-speed { font-size: 53px; margin-bottom: 10px; }
+  .need-card>p { font-size: 14px; margin-bottom: 16px; }
+  .plan-price { margin-bottom: 17px; }
+  .need-card ul { padding-top: 17px; margin-bottom: 17px; }
+  .need-card li { font-size: 13px; margin-bottom: 10px; }
+  .package-pills { margin-block: 22px 30px; gap: 6px; }
+  .package-pills>* { font-size: 11px; padding: 7px 10px; }
+  .speed-intro { margin-bottom: 26px; }
+  .speed-intro .test-tip { display: none; }
+  .speed-panel { padding: 22px 17px; border-radius: 19px; }
+  .gauge { max-width: 265px; }
+  .speed-panel[data-state="idle"] #start-test { width: 160px; height: 160px; font-size: 28px; }
+  .speed-metrics { gap: 15px; }
+  .speed-metrics strong { font-size: 28px; }
+  .speed-status { font-size: 12px; }
+  .test-data-note,.test-fallback { font-size: 11px; }
+  .steps-section { gap: 24px; }
+  .steps li { gap: 14px; padding-bottom: 22px; }
+  .coverage { padding: 23px; gap: 8px; }
+  .coverage-art { min-height: 165px; }
+  .ring-c { width: 240px; height: 240px; }
+  .ring-b { width: 170px; height: 170px; }
+  .faq-list summary { font-size: 14px; padding-block: 19px; }
+  .faq-list details p { font-size: 14px; }
+  .contact-band .container { padding-block: 34px; }
+  .contact-band h2 { font-size: 28px; }
+  .contact-band .button { width: 100%; justify-content: space-between; margin-top: 22px; }
+  .site-footer { padding-top: 30px; }
+  .footer-top { gap: 24px 16px; padding-bottom: 28px; }
+  .footer-top h3 { font-size: 13px; margin-bottom: 16px; }
+  .footer-top>div>a:not(.brand) { font-size: 12px; }
+}
